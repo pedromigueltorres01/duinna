@@ -1,0 +1,65 @@
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;      /*botones del incluir y borrar*/
+    user-select: none;
+    cursor: pointer;
+
+  color:white;
+  background-color:#0d8efc;
+  border-color:#0fdb4eba;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;                                       /*borde de los input*/
+    border-top-width: 3px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 4px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 30px;
+}
+
+
+
+select {
+    border-radius: 30px;
+    border-color: rgb(169, 169, 169);        /*borde de los select*/
+}
+
+
+
+
+input:focus {
+background-color:#08ff64;
+border: 2px solid #00aeea;     /*color del input cuando le dan click*/
+}
+
+
+
+
+select:focus {
+background-color:#08ff64;            /*color del select cuando le dan click*/
+
+border: 2px solid #00aeea;
+}
+
+
+
+
+
+
+
+
+
+
+

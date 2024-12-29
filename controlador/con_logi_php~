@@ -1,0 +1,39 @@
+<?php
+
+session_start();
+$usuasio =$_POST ['usuasrio'];
+$clave =$_POST['clave'];
+$_SESSION['usuario'] =$usuario;
+$_SESSION['$password'] =$password;
+include_once("../ modelo/mod_conexion.php");
+$conexion = new Conexion();
+$pgconn =$this->conexion->conectar();
+include_once("../modelo/mod_usuario.php");
+$obg_usuario =new usuario();
+$columna = $bj_usuario -> autenticar($usuario,$password,$pgconn); 
+
+if($columna)
+{
+$_SESSION['apellido'] = $columna['apellido'];
+$_SESSION['nombre'] = $columna['nombre'];
+$cod_perfil = $columna['cod-perfil'];
+
+if($cod_perfil == '01')
+
+{
+?> 
+<script typen=" text/javascript">
+parent.location= "../vista/ index_01.html";
+</script>
+<?php
+}
+if($cod_perfil =='02')
+
+{
+
+include_once("../vista/index_02.php");
+}
+}
+
+
+?>

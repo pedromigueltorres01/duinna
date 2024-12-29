@@ -1,0 +1,20 @@
+
+    body{font-family: Arial;}
+   
+
+   #reloj {
+    margin-top: -12%;
+    margin-left: -86%;                    /*reloj*/
+    color: white;
+    background: #2980b9;
+    width: 108px;
+    padding: 5px;
+    border-radius: 45px;
+    font-size: 22px;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px -9px 7px -1px rgba(0,0,0,0.75);
+}
+  
+                 

@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Datos del NNA</title>
+	<link rel="stylesheet" type="text/css" href="idena3.css">
+    <link rel="stylesheet" type="text/css" href="idena4.css">
+  <link rel="stylesheet" href="estilos.ccs">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/formularioidena.js"></script>
+       <link rel="stylesheet" type="text/css" href="">
+
+
+
+<b><script> document.write(new Date())</script></b> <!muestra la fecha y la hora>
+
+
+</head>
+<body>
+  <header>
+    <center>
+      <head><img align="center" src="../vista/piedepagina.jpg" width="1330" height="80">
+       <img src="../vista/DUINNA.jpg" style="width: 50%;
+    height: 189px;"></head>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <P style="background-color:lightgrey; width: 100%;" align="center"><b>Data única de incorporación de niños, niñas y adolescentes</b></p>
+
+
+
+
+
+    </center>
+    
+
+
+
+
+<form action="../controlador/validar_Nna.php" method="post">    <!INCLUIR>
+
+
+     <table bgcolor="#999" style="margin-left: 250px" width="60%">
+<a>
+        <tr>
+            <td> <font style="margin-left: 10px" size="4"><b>Datos del Niño, Niña y Adolescente</b></font> </td>
+        </tr>
+
+     </table> <!franja gris>
+     <br>
+
+  
+   <font style="margin-left: 250px" size="4"><b>Nacionalidad<b></font>
+      <select style="margin-left: 284px" name="nacionalidad" required="complete este campo">
+
+ <option value="" required="complete este campo">Seleccione</option>
+
+<option value="1" required="complete este campo">V</option>
+
+<option value="2" required="complete este campo">E</option>
+
+
+</select>
+<br>
+<br>
+
+<table><body>
+
+
+
+<form action="index.php" method="post">
+<font style="margin-left: 250px" size="4"> <b>¿Posee cédula o pasaporte?</b> </font>
+    <select  style="margin-left: 177px" id="status" name="cedula_o_pasaporte" onChange="mostrar(this.value);" required="complete este campo">
+        <option  value="" required="complete este campo">Seleccione</option>
+        <option value="cedulado1">Cédula</option>
+        <option value="pasaporte1">Pasaporte</option>
+    
+     </select>
+
+
+</br>
+
+
+<div id="cedulado1" class="element" style="display: none;">
+   
+      
+       
+<font style="margin-left: 250px" size="4">Número de cédula</font>
+
+<input style="margin-left: 246px" size="40" type="text" placeholder="Indique la cédula"  name="cedula1"  pattern="[0-9]{8,}" title="Solo números min. 8 digitos">
+
+ </div>
+
+ <div id="pasaporte1" class="element" style="display: none;">
+    
+<font style="margin-left: 250px" size="4">Número de pasaporte</font>
+<input style="margin-left: 220px" size="40" type="text" placeholder="Indique el pasaporte"  name="pasaporte1" >
+
+</div>
+
+</br></br>
+<font style="margin-left: 250px" size="4"><b>Número del hijo</font>
+      <select style="margin-left: 114px" name="num_hijos" required="complete este campo">
+
+ <option  value="" required="complete este campo">Seleccione</option>
+
+<option value="1" required="complete este campo">1</option>
+<option value="2" required="complete este campo">2</option>
+<option value="3" required="complete este campo">3</option>
+<option value="4" required="complete este campo">4</option>
+<option value="5" required="complete este campo">5</option>
+<option value="6" required="complete este campo">6</option>
+<option value="7" required="complete este campo">7</option>
+<option value="8" required="complete este campo">8</option>
+<option value="9" required="complete este campo">9</option>
+<option value="10" required="complete este campo">10</option>
+<option value="11" required="complete este campo">11</option>
+<option value="12" required="complete este campo">12</option>
+<option value="13" required="complete este campo">13</option>
+<option value="14" required="complete este campo">14</option>
+<option value="15" required="complete este campo">15</option>
+<option value="16" required="complete este campo">16</option>
+<option value="17" required="complete este campo">17</option>
+<option value="18" required="complete este campo">18</option>
+<option value="19" required="complete este campo">19</option>
+<option value="20" required="complete este campo">20</option>
+
+
+      </select> <!numero del hijo>
+<br><br>
+
+
+</br>
+
+
+
+
+
+<font style="margin-left: 250px" size="4">Primer Nombre</font>
+<input style="margin-left: 261px" size="40" type="tex" placeholder="Primer Nombre" name="primernombre" required pattern="[a-z,A-Z]{3,}" title="Solo letras sin espacios min. 3 letras"required="complete este campo" >
+<br><br>
+<font style="margin-left: 250px" size="4">Segundo Nombre</font>
+<input style="margin-left: 250px" size="40" type="tex" placeholder="Segundo Nombre" name="segundonombre" pattern="[a-z,A-Z]{3,}" title="Solo letras sin espacios min. 3 letras">
+<br><br>
+<font style="margin-left: 250px" size="4">Primer Apellido</font>
+<input style="margin-left: 259px" size="40" type="tex" placeholder="Primer Apellido" name="primerapellido" required pattern="[a-z,A-Z]{3,}" title="Solo letras sin espacios min. 3 letras" required="complete este campo">
+<br><br>
+<font style="margin-left: 250px" size="4">Segundo Apellido</font>
+<input style="margin-left: 248px" size="40" type="tex" placeholder="Segundo Apellido" name="segundoapellido" pattern="[a-z,A-Z]{3,}" title="Solo letras sin espacios min. 3 letras">
+
+
+
+
+
+<script language="JavaScript">
+function edad(Fecha){
+fecha = new Date(Fecha)
+hoy = new Date()                                                                  /*CALCULAR LA EDAD BITCHES!!!*/
+ed = parseInt((hoy -fecha)/365/24/60/60/1000)
+document.getElementById('años').value = "tienes " + ed + " años"
+}
+</script>
+
+<br><br>
+<font style="margin-left: 250px" size="4">Fecha de Nacimiento</font>
+<input style="margin-left: 222px" size="40" type="date" name="fechadenacimiento" required="complete este campo" onblur="edad(this.value)"  step="1" min="1989-01-01" max="2018-12-31">
+<br><br>
+
+ <b><font style="margin-left: 250px" size="4"> Edad</b> <input placeholder="Edad" required="complete este campo" name="años" id="años" style="margin-left: 91px"> </br></br><!edad>
+
+
+
+<font style="margin-left: 250px" size="4"><b>¿Sexo?</font>
+      <select style="margin-left: 326px" name="sexo" required="complete este campo">
+
+ <option  value="" required="complete este campo">Seleccione</option>
+
+<option value="masculino" required="complete este campo">Masculino</option>
+
+<option value="femenino" required="complete este campo">Femenino</option>
+      </select> <!sexo del nna> 
+
+
+
+</br>
+
+</br>
+<font style="margin-left: 250px" size="4"><b>Estado civil</font>
+      <select style="margin-left: 291px" name="civil" required="complete este campo">
+
+ <option  value="" required="complete este campo">Seleccione</option>
+
+<option value="soltero" required="complete este campo">Soltero/a</option>
+
+<option value="casado" required="complete este campo">Casado/a</option>
+      </select> <!estado civil del nna> 
+
+
+
+<br><br>
+
+<table><body>
+
+<form action="index.php" method="post">
+<font style="margin-left: -5px" size="4"> <b>¿Posee teléfono?</b> </font>
+    <select style="margin-left: 253px" id="status" required="complete este campo" name="telefono" onChange="mostrar(this.value);">
+        <option value="">Seleccione</option>
+        <option value="telefono">Si</option>
+        <option value="telefonono">No</option>
+    
+     </select>
+
+
+<br>
+<div id="telefono" class="element" style="display: none;">
+    
+      
+      <form action="index.php" method="post">
+      <br> 
+<font style="margin-left: 250px" size="4">Teléfono</font>
+<input style="margin-left: 313px" size="40" placeholder="Número de Teléfono" name="telefonolocal" pattern="[0-9]{10,}" title="Solo números sin espacios min. 10 digitos">
+</form></form>
+ 
+
+</div>
+
+</body></table>
+
+<table><body>
+
+
+ <font style="margin-left: -5px" size="4"> <b>¿Posee Email?</b> </font>
+    <select style="margin-left: 268px" id="email11" required="complete este campo" name="email" required="complete este campo" onChange="mostrar(this.value);">
+        <option value=""required="complete este campo">Seleccione</option>
+        <option value="email1">Si</option>
+        <option value="emailno">No</option>
+    
+     </select>
+
+
+
+
+<div id="email1" class="element" style="display: none;">
+    
+      
+     
+       </br>
+  <label style="margin-left: 250px" size="4" for="mail">Correo Electrónico</label>
+  <input  style="margin-left: 234px" placeholder="Email" type="email" id="mail" name="mail">
+<script>
+var email = document.getElementById("mail");
+
+email.addEventListener("keyup", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("¡Este correo no es valido para el registro DUINNA!");
+  } else {
+    email.setCustomValidity("");
+  }
+});</script>
+
+ 
+
+</div>
+
+
+
+</body></table>
+
+
+
+<font style="margin-left: 250px" size="4">¿En que trabaja?</font>
+          <input style="margin-left: 245px" size="40" type="tex" placeholder="Indique el trabajo"  name="trabajo" required="complete este campo" >
+
+</br>
+</br>
+    <font style="margin-left: 250px" size="4"><b>Asignar Programa Preventivo<b></font>
+    <select style="margin-left: 11%" name="programapreventivo" required="complete este campo">
+
+ <option value="" required="complete este campo">Seleccione</option>
+<option value="Centro Comunitario de Protección Integral" required="complete este campo">Centro Comunitario de Protección Integral</option>
+<option value="Semillero de la Patria Simón Bolívar" required="complete este campo">Semillero de la Patria Simón Bolívar</option>
+<option value="Programa Nacional de Lectura Sombrero de la Ñ" required="complete este campo">Programa Nacional de Lectura Sombrero de la Ñ</option>
+<option value="PROVINNA" required="complete este campo">PROVINNA</option>
+<option value="Brigada de Formación en Comunicación Popular de NNA" required="complete este campo">Brigada de Formación en Comunicación Popular de NNA</option>
+</select>
+
+
+<br><br>
+<font style="margin-left: 250px" size="4">Fecha de incorporación al Programa</font>
+<input style="margin-left: 7%" size="40" type="date" name="fechaincorporacion" required="complete este campo" step="1" min="1989-01-01" max="2018-12-31">
+
+
+<br><br>
+<font style="margin-left: 250px" size="4">Nombre del CCPI, Grupo o Codigo de Brigada</font>
+<input style="margin-left: 1%" size="40" type="tex" name="ccpi" placeholder="Nombre del CCPI" required="complete este campo" >
+
+
+<br><br>
+    <font style="margin-left: 250px" size="4"><b>Lugar de Funcionamiento de la Brigada<b></font>
+    <select style="margin-left: 5%" name="brigada" required="complete este campo">
+
+ <option value="" required="complete este campo">Seleccione</option>
+<option value="Institución Educativa" required="complete este campo">Institución Educativa</option>
+<option value="Comunidad" required="complete este campo">Comunidad</option>
+<option value="Nuevo Urbanismo" required="complete este campo">Nuevo Urbanismo</option>
+<option value="Espacios de Recreación" required="complete este campo">Espacios de Recreación</option>
+<option value="UPI" required="complete este campo">UPI</option>
+<option value="UPIE" required="complete este campo">UPIE</option>
+<option value="Otro" required="complete este campo">Otro</option>
+</select>
+ 
+     <br>
+
+<br><br>
+
+
+
+
+<br><br>
+
+
+ 
+     <br>
+
+
+
+</br>
+<br>
+<br>
+<input class='btn btn-lg btn-primary btn-block btn-signin' style="margin-left: 300px" size="40" type="submit" name="incluir" value="INCLUIR">
+<input class='btn btn-lg btn-primary btn-block btn-signin' style="margin-left: 300px" size="40" type="reset" name="borrar" value="BORRAR" <!--onclick=" alert('BORRADO');"--/>
+
+</form>
+
+
+
+ </form>
+
+
+<!--<script><div class="n"><div class="n">
+<a href="#" title="Ir arriba"><img alt="Ir arriba" border="0"
+src="file:///C:/Users/1234/Desktop/Nueva%20carpeta/IDENNA(formulario)/formularioidena.html"
+style=position:fixed;botttom:0;right:0;/></a></div></script>*/-->
+
+<footer id="footer2" style="background-color: #999"> <address style="margin-left: 30%;"> <font color="white"><center></b> Intranet Idena - Copyletf2015 Instituto Anonimo Consejo Nacional de Derechos de Niñas, Niños y Adolescentes &copy; <br>
+  Todos los derechos reservados &copy; </b></font> <br> </address> </footer>
+
+
+</table>
+</body>
+</body>
+
+
+<style>
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;      /*botones del incluir y borrar*/
+    user-select: none;
+    cursor: pointer;
+
+  color:white;
+  background-color:#0d8efc;
+  border-color:#0fdb4eba;
+}
+</style>
+<style>
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;                                       /*borde de los input*/
+    border-top-width: 3px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 4px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 30px;
+}
+</style>
+
+<style>
+select {
+    border-radius: 30px;
+    border-color: rgb(169, 169, 169);        /*borde de los select*/
+}
+}
+</style>
+
+<style>
+input:focus {
+background-color:#08ff64;
+border: 2px solid #00aeea;     /*color del input cuando le dan click*/
+}
+</style>
+
+
+<style>
+select:focus {
+background-color:#08ff64;            /*color del select cuando le dan click*/
+}
+border: 2px solid #00aeea;
+}
+</style>
+</html>

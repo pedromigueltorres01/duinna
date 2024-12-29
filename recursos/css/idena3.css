@@ -1,0 +1,613 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	margin: 0;
+background-color: none
+}
+header
+{
+background-color: none
+/*sirve para colocar el color de fondo*/
+
+
+
+}
+
+header
+{
+	padding: -1px
+
+	/*Sirve para alargar la barra del texto*/	
+}	
+
+a
+{
+	display: inline; 
+	/*sirve para poner las cajas una al lado de la otra*/
+	
+	background-color: none
+	/*sirve para colocar el color de fondo*/
+}
+
+a
+{
+	border-radius: 15px
+	/*sirve para poner el borde redondeado*/
+
+}
+
+
+table
+{
+	margin-left: 40%
+	/*sirve para alinear el texto a la derecha*/ 
+}
+br{
+	margin-left: 400px
+}
+
+a
+{
+	margin-right: -10%
+	/*sirve para alinear el texto a la izquierda*/
+}
+
+aside
+{
+float: right;
+height: 120px
+}
+
+aside
+{
+	margin-left: 30px
+	/*sirve para alinear el texto a la izquierda*/
+
+}
+
+aside
+{
+	margin-top: -30px
+	/*sirve para separar la columna del encabezado*/
+
+
+}
+
+ul
+{
+	padding-top: -800px
+	/*sirve para separar el texto del margen de arriba*/
+}
+
+a
+{
+	box-shadow: none 20px 8px  40px
+	/*sirve para darle la sombra gris*/
+
+
+/*}
+header
+{
+
+	box-shadow: red 10px 10px	50px
+	/*sirve para darle la sombra gris*/
+}
+*/
+a
+{
+	text-shadow: red 30px 30px 40px
+
+	/*sirve para darle la sombra gris al texto*/
+}
+
+h1
+{
+	text-shadow: blue; 20px 30px 50px
+	/*sirve para darle la sombra gris al texto*/
+
+}
+
+h2
+{
+	text-shadow: blue; 20px 30px 50px
+	/*sirve para darle la sombra gris al texto*/
+}
+/*
+section
+{
+	margin: 100px
+
+} */
+
+#tutu
+{
+	font-family: cursive;
+	box-shadow: #999 10px 15px	200px
+
+}
+
+/*
+section
+{
+	width: 50px
+	/* width sirve para alinear todo a la izquierda
+	border-top: 1px dashed #999
+}*/
+
+figure
+{
+	float: left;
+}
+/*
+section
+{
+	margin-top: -55px
+}
+*/
+figure img
+{
+	padding: 20px
+
+}
+
+figure img
+{
+	border-radius: 90px 
+
+}
+
+footer
+{
+	border-radius: 15px
+
+}
+
+footer
+{
+	padding: 30px
+
+	/*Sirve para alargar la barra del texto*/
+}
+
+
+
+
+img
+{
+	box-shadow: none 3px 15px	40px /*para colocar la sombra a toda la pagina*/
+
+}*/
+
+aside
+{
+
+	height: 1320px
+}
+
+table#especifica
+{
+	margin-left: 0%
+	/*sirve para alinear el texto a la derecha*/ 
+}
+
+
+table
+{
+ margin-top: 2%
+
+}
+aside
+{
+
+}
+
+/*section
+{
+	margin-left: 143px
+}
+*/
+#fotocabezera
+{
+	padding-top: -15px
+
+}
+
+#fotocabezera
+{
+	width: 1000px;
+	
+}
+
+a
+{
+	margin-top: 50px
+
+}
+
+#culo
+{
+	background-color: none
+}
+
+#foto
+{
+	margin-left: 150px
+}
+
+#foto
+{
+	height: 30px
+}
+
+#foto
+{
+	margin: 50px
+}
+
+footer
+{
+	margin-top: 67px
+}
+
+#direccion
+{
+	padding-top: 10px
+}
+
+
+
+
+#aside
+{
+	height: 500px
+}
+
+#footer
+{
+	margin-top: 224px
+}
+
+#footer2
+{
+    margin: 0px;
+	margin-top: 9.9%;
+    width: 100%;
+    height: 8px;
+    
+
+    
+}
+#footer3
+{
+	margin-top: 176px
+}
+
+#footer4
+{
+	margin-top: -126px
+}
+
+
+
+#menu{
+	width: 85%;
+	display: table;
+	table-layout: fixed;
+	float: left;
+}
+
+ul#menu {
+ 		
+   
+    margin-top: 1%;
+    margin-left: 30%;
+        height: 0px;
+        width: 100%;
+}         /*color del cuadro del menu*/
+  
+
+ul#menu li {
+ color: #2321E7;
+ float: left;			/*color de las letras del menu*/
+ list-style: none;
+ margin: 0% 2%;
+}
+  
+ul#menu li:hover{
+ color: #b10f4a;		/*color del sombreado de la letra*/
+ cursor: none;
+}
+  
+ul#menu ul {
+ display: none;
+ position: absolute;
+ padding-top:  250px;
+ background: green;
+ color: red;
+ padding: 5px 0px 5px 5px;
+ margin: 0;
+
+ }
+
+ ul#menu ul {
+ display: none;
+ position: absolute;
+ padding-top:  250px;
+ background: none;
+ color: #fff;
+ padding: 5px 0px 5px 5px;
+ margin: 0;
+ }
+ ul#menu ul li ul{
+width: 260px;
+height: 168px;
+ }
+
+
+
+ ul#menu ul {
+ display: none;
+ position: left;
+ padding-top:  250px;
+ background: none;
+ color: #fff;
+ padding: 5px 0px 5px 5px;
+ margin: 0;
+ }
+  
+ul#menu ul {
+ display: none;
+ /*position: left;
+ padding-top:  2500px;*/
+ background: #70d199e6;   /*desplegable del menu  y colores*/
+ color: #fff;
+ padding: 0px;
+margin: 0%;
+width: 18%;
+ }
+
+ul#menu ul li{
+ float: left;
+ color: black;
+ width:100%;
+ margin:2% 0%;
+ margin-left: 14px;
+}  /*color de las letras desplegables del menu>*/
+ 
+ 
+ul#menu ul li a{
+ color: #fff;
+}
+  
+ul#menu ul li a:hover{
+ color: #aaa073;
+ cursor:pointer;
+}
+  
+ul#menu li:hover ul ul,ul#menu li:hover ul ul ul,ul#menu li.iehover ul ul,ul#menu li.iehover ul ul ul {
+ display: none;
+ cursor:pointer;
+}
+  
+ul#menu li:hover ul,ul#menu ul li:hover ul,ul#menu ul ul li:hover ul,ul#menu li.iehover ul,ul#menu ul li.iehover ul,ul#menu ul ul li.iehover ul {
+ display: inline;
+ cursor:pointer;
+ margin-left: -50px
+}
+
+
+
+
+
+/*h1 {
+text-shadow: 0 0 10px black,
+0 0 20px red,
+0 0 30px #fff,
+0 0 40px lightgreen,
+0 0 70px #ff00de,
+0 0 80px #ff00de,
+0 0 100px #ff00de,
+0 0 150px #ff00de;
+}*/
+
+
+
+
+
+
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.open>.dropdown-menu {
+    display: block;
+}
+bootstrap.min.css:5
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+bootstrap.min.css:5
+ol ol, ol ul, ul ol, ul ul {
+    margin-bottom: 0;
+}
+bootstrap.min.css:5
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+bootstrap.min.css:5
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+ol ul, ul ol, ul ul, ol ol {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+}
+user agent stylesheet
+ul ul, ol ul {
+    list-style-type: circle;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from li.dropdown.open
+user agent stylesheet
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul.nav.navbar-nav
+bootstrap.min.css:5
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+user agent stylesheet
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+Inherited from body
+bootstrap.min.css:5
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+Inherited from html
+bootstrap.min.css:5
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+bootstrap.min.css:5
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+Pseudo ::before element
+bootstrap.min.css:5
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+bootstrap.min.css:5
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+#column-left {
+    background-color: #EBE9EA;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px 8px 8px 8px;
+    float: left;
+    position: fixed;
+    min-height: 225px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+}
+
+#central {
+    background-color: #EBE9EA;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px 8px 8px 8px;
+    float: right;
+    height: 5000px;
+    margin-bottom: 10px;
+    width: 985px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
